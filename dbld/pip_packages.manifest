@@ -3,6 +3,7 @@
 aiosmtpd                [kira]                                                 [python3]
 cryptography            [kira]                                                 [python3]
 distro                  [kira]                                                 [python3]
+execnet                 [kira]                                                 [python3]
 hy                      [kira]                                                 [python3]
 hyrule                  [kira]                                                 [python3]
 pyodbc                  [kira]                                                 [python3]
