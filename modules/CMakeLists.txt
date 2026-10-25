@@ -56,3 +56,9 @@ add_subdirectory(rate-limit-filter)
 add_subdirectory(metrics-probe)
 add_subdirectory(grpc)
 add_subdirectory(cloud-auth)
+
+# Additional module directories outside of this tree, e.g. platform specific modules
+foreach(extra_module_dir ${SYSLOG_NG_EXTRA_MODULE_DIRS})
+  get_filename_component(extra_module_name "${extra_module_dir}" NAME)
+  add_subdirectory("${extra_module_dir}" "${CMAKE_CURRENT_BINARY_DIR}/extra/${extra_module_name}")
+endforeach()
